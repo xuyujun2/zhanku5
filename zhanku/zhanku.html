@@ -1,0 +1,762 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<title>无标题文档</title>
+<style>
+    body,h1,h3,h4,h2,h5,h6,ul,ol,p,fieldset,dd,dl,input,textarea,option,hr,td{margin:0;padding:0;}
+    a{text-decoration:none;color:black;}
+    span,a,p{font-size:12px;font-family:"微软雅黑"}
+    h1,h3,h4,h2,h5,h6,b,strong{font-weight:normal;font-size:14px;}
+    i,em{font-style:normal;}
+    img{border:none;}
+    a,input{outline:none;}
+
+    #header{height:52px;width:100%;position:absolute;top:0;left;0;border-bottom:4px gray solid;background:#ffd100;}
+	#header .header{position:absolute;left:0;top:0;bottom:0;right:0;margin:0 auto;width:1128px;height:52px;}
+	#header h1{font-size:0;float:left;margin-left:0px;margin-top:10px;}
+	#header .shouye{height:52px;list-style:none;margin-left:100px;width:670px;float:left;}
+	#header .shouye li{float:left;padding:0 20px;}
+	#header .shouye li:hover{background-color:black;}
+	#header .shouye li:hover a{color:yellow;}
+	#header .shouye .li9{height:52px;}
+	#header .shouye .li9 img{margin-top:13px;}
+	#header .shouye li a{line-height:52px;}
+	#header .login{float:right;width:149px;list-style:none;height:52px;margin-right:0px;}
+	#header .login li{float:left;padding:0 25px;margin-top:20px;height:19px;}
+	#header .login li a{line-height:19px;display:block;}
+	
+	#banner{position:absolute;top:56px;left:0;height:317px;width:100%;z-index:-1;}
+	#banner .banner{width:1128px;height:300px;margin:8px auto;}
+	
+	#main1{height:209px;width:100%;position:absolute;top:365px;left:0;}
+	#main1 ul{list-style:none;margin:22px auto;width:1128px;}
+	#main1 ul li{float:left;margin-right:19px;}
+	#main1 ul .li5{margin-right:0;}
+	
+	#main2{position:absolute;top:609px;left:0;width:100%;height:60px; background:white;}
+	#main2 .top{position:absolute;width:1128px;height:60px;top:0;left:0;right:0;bottom:0;margin:0 auto;}
+	#main2 .top ul{list-style:none;margin-left:372px;width:378px;height:60px;float:left;}
+	#main2 .top ul li{float:left;padding:0px 32px;}
+	#main2 .top ul li a{line-height:60px;display:block;}
+	#main2 .top img{float:right;}
+	
+	#main3{position:absolute;top:671px;left:0;width:100%;height:2764px;background:#f4f4f4;}
+	#main3 .main3{position:absolute;left:0;right:0;bottom:0;top:0;margin:0 auto;width:1128px;height:2661px;}
+	#main3 .main3 .ul1{width:1128px;height:309px;list-style:none;margin-top:20px;}
+	#main3 .main3 .ul1 li{float:left;width:208px;height:309px;margin-right:22px;background:white;}
+	#main3 .main3 .ul1 .li5{margin-right:0px;}
+	#main3 .main3 .ul1 li>a img{width:208px;height:157px;}
+	#main3 .main3 .ul1 li>h3{width:177px;line-height:27px;margin-left:16px;}
+	#main3 .main3 .ul1 li>p{width:177px;line-height:27px;margin-left:16px;}
+	#main3 .main3 .ul1 li>span{display:inline-block;line-height:50px;margin-left:35px;}
+	#main3 .main3 .ul1 li .ulbottom{height:50px;width:208px;border-top:1px solid gray;}
+	#main3 .main3 .ul1 li .ulbottom img{margin-top:14px;margin-left:14px;float:left;}
+	#main3 .main3 .ul1 li .ulbottom p{margin-top:14px;margin-left:12px;float:left;}
+	#main3 .main3 .ul1 li .ulbottom span{margin-top:14px;margin-left:70px;float:left;}
+	#main3 .main3 .ul2{position:absolute;left:312px;top:2675px;width:502px;height:39px;list-style:none;}
+	#main3 .main3 .ul2 li{width:40px;height:40px;background:white;float:left;margin-right:3px;border:1px solid gray;text-align:center;}
+	#main3 .main3 .ul2 .limo{margin-right:0;}
+	#main3 .main3 .ul2 li a{line-height:39px;}
+	
+	#main4{position:absolute;top:3430px;left:0;width:100%;height:533px;background:#f4f4f4;}
+	#main4 .main4{position:absolute;left:0;right:0;top:0;bottom:0;margin:0 auto;width:1128px;height:503px;}
+	#main4 .main4 .top{width:1128px;height:154px;position:absolute;top:0;left:0;}
+	#main4 .main4 .top img{width:1128px;height:98px;float:left;}
+	#main4 .main4 .top .span1{float:left;line-height:54px;}
+	#main4 .main4 .top .span2{float:right;line-height:54px;}
+	#main4 .main4 .top .span2 a{color:red;}
+	#main4 .main4 .bottom{width:1128px;height:309px;list-style:none;position:absolute;left:0;top:155px;}
+	#main4 .main4 .bottom li{float:left;width:208px;height:309px;margin-right:22px;background:white;}
+	#main4 .main4 .bottom .li5{margin-right:0px;}
+	#main4 .main4 .bottom li>img{width:208px;height:157px;}
+	#main4 .main4 .bottom li>h3{width:177px;line-height:27px;margin-left:16px;}
+	#main4 .main4 .bottom li>p{width:177px;line-height:27px;margin-left:16px;}
+	#main4 .main4 .bottom li>span{display:inline-block;line-height:50px;padding-left:35px;}
+	#main4 .main4 .bottom li .span1{background:url(./images/1.gif) no-repeat 10px 17px;}
+	#main4 .main4 .bottom li .span2{background:url(./images/2.gif) no-repeat 10px 17px;}
+	#main4 .main4 .bottom li .span3{background:url(./images/3.gif) no-repeat 10px 20px;}
+	#main4 .main4 .bottom li .ulbottom{height:50px;width:208px;border-top:1px solid gray;}
+	#main4 .main4 .bottom li .ulbottom img{margin-top:14px;margin-left:14px;float:left;}
+	#main4 .main4 .bottom li .ulbottom p{margin-top:14px;margin-left:14px;float:left;}
+	#main4 .main4 .bottom li .ulbottom span{margin-top:14px;margin-left:78px;float:left;}
+	
+	#main5{position:absolute;top:3947px;left:0;background:black;width:100%;height:249px;}
+	#main5 .link{width:1128px;height:128px;margin:0 auto;}
+	#main5 .link ul{list-style:none;border-bottom:1px solid gray;height:128px;}
+	#main5 .link ul li{float:left;padding-right:40px;}
+	#main5 .link ul li a{color:gray;line-height:128px;}
+	#main5 .foot{width:1128px;height:98px;margin:0 auto;}
+	#main5 .foot ul{list-style:none;position:absolute;top:140px;width:1128px;height:97px;}
+	#main5 .foot ul li{height:22px;float:left;padding:0 38px;border-right:1px gray solid;}
+	#main5 .foot ul .li1{padding-left:0;}
+	#main5 .foot ul .li2{padding-left:0;margin-top:20px;}
+	#main5 .foot ul .li3{border-right:0;margin-top:20px;}
+	#main5 .foot ul .li4{margin-top:20px;float:right;border-right:0;margin-right:0px;}
+	#main5 .foot ul li a{line-height:22px;color:gray;font-size:12px;}
+	
+    
+    /* background:green;    background:red;   background:yellow;  border:1px solid red; */
+</style>
+</head>
+
+<body>
+    <div id="header">
+        <div class="header">
+            <h1><a href="#"><img src="./images/2.jpg"/></a></h1>
+            <ul class="shouye">
+               <li><a href="#">首页</a></li>
+               <li><a href="#">发现</a></li>
+               <li><a href="#">同城</a></li>
+               <li><a href="#">职位</a></li>
+               <li><a href="#">活动</a></li>
+               <li><a href="#">素材</a></li>
+               <li><a href="#">课程</a></li>
+               <li><a href="#">···</a></li>
+               <li class="li9"><a href="#"><img src="./images/20.png"/></a></li>
+               <li class="li9"><a href="#"><img src="./images/21.png"/></a></li>
+            </ul>
+            <ul class="login">
+               <li style="border-right:1px solid gray;"><a href="#">登录</a></li>
+               <li><a href="#">注册</a></li>
+            </ul>
+         </div>
+    </div>
+    
+    <div id="banner">
+        <div class="banner">
+            <a href="#"><img src="./images/1.jpg" width="100%" height="100%"/></a>
+        </div>
+    </div>
+    
+    <div id="main1">
+        <ul>
+           <li><a href="#"><img src="./images/1.png"/></a></li>
+           <li><a href="#"><img src="./images/2.png"/></a></li>
+           <li><a href="#"><img src="./images/3.png"/></a></li>
+           <li><a href="#"><img src="./images/4.png"/></a></li>
+           <li class="li5"><a href="#"><img src="./images/5.png"/></a></li>  
+        </ul>
+    </div>
+    
+    <div id="main2">
+       <div class="top">
+           <ul>
+              <li><a href="#">首页推荐</a></li>
+              <li><a href="#">最新发布</a></li>
+              <li><a href="#">上升最快</a></li>
+           </ul>
+           <img src="./images/3.jpg"/>
+       </div>
+    </div>
+    
+    <div id="main3">
+       <div class="main3">
+         <ul class="ul1">
+           <li>
+             <a href="#"><img src="./images/4.jpg"/></a>
+             <h3><a href="#">城</a></h3>
+             <p>平面-书装/画册</p>
+             <span>437</span><span>5</span><span>10</span>
+             <div class="ulbottom">
+                <a href="#"><img src="./images/6.png"/></a>
+                <p><a href="#">KE-aka</a></p>
+                <span>1天前</span>
+             </div>
+            </li>
+            
+           <li>
+             <a href="#"><img src="./images/5.jpg"/></a>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span>437</span><span>5</span><span>10</span>
+             <div class="ulbottom">
+                <a href="#"><img src="./images/7.png"/></a>
+                <a href="#"><p>KE-aka</p></a>
+                <span>1天前</span>
+             </div>
+            </li>
+            
+           <li>
+             <a href="#"><img src="./images/6.jpg"/></a>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span>437</span><span>5</span><span>10</span>
+             <div class="ulbottom">
+                <a href="#"><img src="./images/8.png"/></a>
+                <a href="#"><p>KE-aka</p></a>
+                <span>1天前</span>
+             </div>
+            </li>
+            
+           <li>
+             <a href="#"><img src="./images/7.jpg"/></a>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span>437</span><span>5</span><span>10</span>
+             <div class="ulbottom">
+                <a href="#"><img src="./images/9.png"/></a>
+                <a href="#"><p>KE-aka</p></a>
+                <span>1天前</span>
+             </div>
+            </li>
+            
+           <li class="li5">
+             <a href="#"><img src="./images/8.jpg"/></a>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span>437</span><span>5</span><span>10</span>
+             <div class="ulbottom">
+                <a href="#"><img src="./images/10.png"/></a>
+                <a href="#"><p>KE-aka</p></a>
+                <span>1天前</span>
+             </div>
+            </li>
+         </ul>
+         
+         <ul class="ul1">
+           <li>
+             <a href="#"><img src="./images/4.jpg"/></a>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span>437</span><span>5</span><span>10</span>
+             <div class="ulbottom">
+                <a href="#"><img src="./images/6.png"/></a>
+                <p><a href="#">KE-aka</a></p>
+                <span>1天前</span>
+             </div>
+            </li>
+            
+           <li>
+             <a href="#"><img src="./images/5.jpg"/></a>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span>437</span><span>5</span><span>10</span>
+             <div class="ulbottom">
+                <a href="#"><img src="./images/7.png"/></a>
+                <a href="#"><p>KE-aka</p></a>
+                <span>1天前</span>
+             </div>
+            </li>
+            
+           <li>
+             <a href="#"><img src="./images/6.jpg"/></a>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span>437</span><span>5</span><span>10</span>
+             <div class="ulbottom">
+                <a href="#"><img src="./images/8.png"/></a>
+                <a href="#"><p>KE-aka</p></a>
+                <span>1天前</span>
+             </div>
+            </li>
+            
+           <li>
+             <a href="#"><img src="./images/7.jpg"/></a>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span>437</span><span>5</span><span>10</span>
+             <div class="ulbottom">
+                <a href="#"><img src="./images/9.png"/></a>
+                <a href="#"><p>KE-aka</p></a>
+                <span>1天前</span>
+             </div>
+            </li>
+            
+           <li class="li5">
+             <a href="#"><img src="./images/8.jpg"/></a>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span>437</span><span>5</span><span>10</span>
+             <div class="ulbottom">
+                <a href="#"><img src="./images/10.png"/></a>
+                <a href="#"><p>KE-aka</p></a>
+                <span>1天前</span>
+             </div>
+            </li>
+         </ul>
+         
+         <ul class="ul1">
+           <li>
+             <a href="#"><img src="./images/4.jpg"/></a>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span>437</span><span>5</span><span>10</span>
+             <div class="ulbottom">
+                <a href="#"><img src="./images/6.png"/></a>
+                <p><a href="#">KE-aka</a></p>
+                <span>1天前</span>
+             </div>
+            </li>
+            
+           <li>
+             <a href="#"><img src="./images/5.jpg"/></a>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span>437</span><span>5</span><span>10</span>
+             <div class="ulbottom">
+                <a href="#"><img src="./images/7.png"/></a>
+                <a href="#"><p>KE-aka</p></a>
+                <span>1天前</span>
+             </div>
+            </li>
+            
+           <li>
+             <a href="#"><img src="./images/6.jpg"/></a>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span>437</span><span>5</span><span>10</span>
+             <div class="ulbottom">
+                <a href="#"><img src="./images/8.png"/></a>
+                <a href="#"><p>KE-aka</p></a>
+                <span>1天前</span>
+             </div>
+            </li>
+            
+           <li>
+             <a href="#"><img src="./images/7.jpg"/></a>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span>437</span><span>5</span><span>10</span>
+             <div class="ulbottom">
+                <a href="#"><img src="./images/9.png"/></a>
+                <a href="#"><p>KE-aka</p></a>
+                <span>1天前</span>
+             </div>
+            </li>
+            
+           <li class="li5">
+             <a href="#"><img src="./images/8.jpg"/></a>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span>437</span><span>5</span><span>10</span>
+             <div class="ulbottom">
+                <a href="#"><img src="./images/10.png"/></a>
+                <a href="#"><p>KE-aka</p></a>
+                <span>1天前</span>
+             </div>
+            </li>
+         </ul>
+         
+         <ul class="ul1">
+           <li>
+             <a href="#"><img src="./images/4.jpg"/></a>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span>437</span><span>5</span><span>10</span>
+             <div class="ulbottom">
+                <a href="#"><img src="./images/6.png"/></a>
+                <p><a href="#">KE-aka</a></p>
+                <span>1天前</span>
+             </div>
+            </li>
+            
+           <li>
+             <a href="#"><img src="./images/5.jpg"/></a>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span>437</span><span>5</span><span>10</span>
+             <div class="ulbottom">
+                <a href="#"><img src="./images/7.png"/></a>
+                <a href="#"><p>KE-aka</p></a>
+                <span>1天前</span>
+             </div>
+            </li>
+            
+           <li>
+             <a href="#"><img src="./images/6.jpg"/></a>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span>437</span><span>5</span><span>10</span>
+             <div class="ulbottom">
+                <a href="#"><img src="./images/8.png"/></a>
+                <a href="#"><p>KE-aka</p></a>
+                <span>1天前</span>
+             </div>
+            </li>
+            
+           <li>
+             <a href="#"><img src="./images/7.jpg"/></a>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span>437</span><span>5</span><span>10</span>
+             <div class="ulbottom">
+                <a href="#"><img src="./images/9.png"/></a>
+                <a href="#"><p>KE-aka</p></a>
+                <span>1天前</span>
+             </div>
+            </li>
+            
+           <li class="li5">
+             <a href="#"><img src="./images/8.jpg"/></a>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span>437</span><span>5</span><span>10</span>
+             <div class="ulbottom">
+                <a href="#"><img src="./images/10.png"/></a>
+                <a href="#"><p>KE-aka</p></a>
+                <span>1天前</span>
+             </div>
+            </li>
+         </ul>
+         
+         <ul class="ul1">
+           <li>
+             <a href="#"><img src="./images/4.jpg"/></a>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span>437</span><span>5</span><span>10</span>
+             <div class="ulbottom">
+                <a href="#"><img src="./images/6.png"/></a>
+                <p><a href="#">KE-aka</a></p>
+                <span>1天前</span>
+             </div>
+            </li>
+            
+           <li>
+             <a href="#"><img src="./images/5.jpg"/></a>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span>437</span><span>5</span><span>10</span>
+             <div class="ulbottom">
+                <a href="#"><img src="./images/7.png"/></a>
+                <a href="#"><p>KE-aka</p></a>
+                <span>1天前</span>
+             </div>
+            </li>
+            
+           <li>
+             <a href="#"><img src="./images/6.jpg"/></a>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span>437</span><span>5</span><span>10</span>
+             <div class="ulbottom">
+                <a href="#"><img src="./images/8.png"/></a>
+                <a href="#"><p>KE-aka</p></a>
+                <span>1天前</span>
+             </div>
+            </li>
+            
+           <li>
+             <a href="#"><img src="./images/7.jpg"/></a>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span>437</span><span>5</span><span>10</span>
+             <div class="ulbottom">
+                <a href="#"><img src="./images/9.png"/></a>
+                <a href="#"><p>KE-aka</p></a>
+                <span>1天前</span>
+             </div>
+            </li>
+            
+           <li class="li5">
+             <a href="#"><img src="./images/8.jpg"/></a>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span>437</span><span>5</span><span>10</span>
+             <div class="ulbottom">
+                <a href="#"><img src="./images/10.png"/></a>
+                <a href="#"><p>KE-aka</p></a>
+                <span>1天前</span>
+             </div>
+            </li>
+         </ul>
+         
+         <ul class="ul1">
+           <li>
+             <a href="#"><img src="./images/4.jpg"/></a>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span>437</span><span>5</span><span>10</span>
+             <div class="ulbottom">
+                <a href="#"><img src="./images/6.png"/></a>
+                <p><a href="#">KE-aka</a></p>
+                <span>1天前</span>
+             </div>
+            </li>
+            
+           <li>
+             <a href="#"><img src="./images/5.jpg"/></a>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span>437</span><span>5</span><span>10</span>
+             <div class="ulbottom">
+                <a href="#"><img src="./images/7.png"/></a>
+                <a href="#"><p>KE-aka</p></a>
+                <span>1天前</span>
+             </div>
+            </li>
+            
+           <li>
+             <a href="#"><img src="./images/6.jpg"/></a>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span>437</span><span>5</span><span>10</span>
+             <div class="ulbottom">
+                <a href="#"><img src="./images/8.png"/></a>
+                <a href="#"><p>KE-aka</p></a>
+                <span>1天前</span>
+             </div>
+            </li>
+            
+           <li>
+             <a href="#"><img src="./images/7.jpg"/></a>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span>437</span><span>5</span><span>10</span>
+             <div class="ulbottom">
+                <a href="#"><img src="./images/9.png"/></a>
+                <a href="#"><p>KE-aka</p></a>
+                <span>1天前</span>
+             </div>
+            </li>
+            
+           <li class="li5">
+             <a href="#"><img src="./images/8.jpg"/></a>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span>437</span><span>5</span><span>10</span>
+             <div class="ulbottom">
+                <a href="#"><img src="./images/10.png"/></a>
+                <a href="#"><p>KE-aka</p></a>
+                <span>1天前</span>
+             </div>
+            </li>
+         </ul>
+         
+         <ul class="ul1">
+           <li>
+             <a href="#"><img src="./images/4.jpg"/></a>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span>437</span><span>5</span><span>10</span>
+             <div class="ulbottom">
+                <a href="#"><img src="./images/6.png"/></a>
+                <p><a href="#">KE-aka</a></p>
+                <span>1天前</span>
+             </div>
+            </li>
+            
+           <li>
+             <a href="#"><img src="./images/5.jpg"/></a>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span>437</span><span>5</span><span>10</span>
+             <div class="ulbottom">
+                <a href="#"><img src="./images/7.png"/></a>
+                <a href="#"><p>KE-aka</p></a>
+                <span>1天前</span>
+             </div>
+            </li>
+            
+           <li>
+             <a href="#"><img src="./images/6.jpg"/></a>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span>437</span><span>5</span><span>10</span>
+             <div class="ulbottom">
+                <a href="#"><img src="./images/8.png"/></a>
+                <a href="#"><p>KE-aka</p></a>
+                <span>1天前</span>
+             </div>
+            </li>
+            
+           <li>
+             <a href="#"><img src="./images/7.jpg"/></a>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span>437</span><span>5</span><span>10</span>
+             <div class="ulbottom">
+                <a href="#"><img src="./images/9.png"/></a>
+                <a href="#"><p>KE-aka</p></a>
+                <span>1天前</span>
+             </div>
+            </li>
+            
+           <li class="li5">
+             <a href="#"><img src="./images/8.jpg"/></a>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span>437</span><span>5</span><span>10</span>
+             <div class="ulbottom">
+                <a href="#"><img src="./images/10.png"/></a>
+                <a href="#"><p>KE-aka</p></a>
+                <span>1天前</span>
+             </div>
+            </li>
+         </ul>
+         
+         <ul class="ul1">
+           <li>
+             <a href="#"><img src="./images/4.jpg"/></a>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span>437</span><span>5</span><span>10</span>
+             <div class="ulbottom">
+                <a href="#"><img src="./images/6.png"/></a>
+                <p><a href="#">KE-aka</a></p>
+                <span>1天前</span>
+             </div>
+            </li>
+            
+           <li>
+             <a href="#"><img src="./images/5.jpg"/></a>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span>437</span><span>5</span><span>10</span>
+             <div class="ulbottom">
+                <a href="#"><img src="./images/7.png"/></a>
+                <a href="#"><p>KE-aka</p></a>
+                <span>1天前</span>
+             </div>
+            </li>
+            
+           <li>
+             <a href="#"><img src="./images/6.jpg"/></a>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span>437</span><span>5</span><span>10</span>
+             <div class="ulbottom">
+                <a href="#"><img src="./images/8.png"/></a>
+                <a href="#"><p>KE-aka</p></a>
+                <span>1天前</span>
+             </div>
+            </li>
+            
+           <li>
+             <a href="#"><img src="./images/7.jpg"/></a>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span>437</span><span>5</span><span>10</span>
+             <div class="ulbottom">
+                <a href="#"><img src="./images/9.png"/></a>
+                <a href="#"><p>KE-aka</p></a>
+                <span>1天前</span>
+             </div>
+            </li>
+            
+           <li class="li5">
+             <a href="#"><img src="./images/8.jpg"/></a>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span>437</span><span>5</span><span>10</span>
+             <div class="ulbottom">
+                <a href="#"><img src="./images/10.png"/></a>
+                <a href="#"><p>KE-aka</p></a>
+                <span>1天前</span>
+             </div>
+            </li>
+         </ul>
+         
+         <ul class="ul2">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+            <li><a href="#">...</a></li>
+            <li><a href="#">90</a></li>
+            <li><a href="#">100</a></li>
+            <li><a href="#">&gt;</a></li>
+         </ul>
+       </div>
+    </div>
+    
+    <div id="main4">
+       <div class="main4">
+          <div class="top">
+             <img src="./images/9.jpg"/>
+             <span class="span1">猜你喜欢</span>
+             <span class="span2"><a href="#">换一换</a></span>
+          </div>
+          <<ul class="bottom">
+           <li>
+             <img src="./images/11.png"/>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span class="span1">8837</span><span class="span2">5</span><span class="span3">80</span>
+             <div class="ulbottom">
+                <img src="./images/16.png"/>
+                <p>KE-aka</p>
+             </div>
+            </li>
+            
+           <li>
+             <img src="./images/12.png"/>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span class="span1">8837</span><span class="span2">5</span><span class="span3">80</span>
+             <div class="ulbottom">
+                <img src="./images/17.png"/>
+                <p>KE-aka</p>
+             </div>
+            </li>
+            
+           <li>
+             <img src="./images/13.png"/>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span class="span1">8837</span><span class="span2">5</span><span class="span3">80</span>
+             <div class="ulbottom">
+                <img src="./images/18.png"/>
+                <p>KE-aka</p>
+             </div>
+            </li>
+            
+           <li>
+             <img src="./images/14.png"/>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span class="span1">8837</span><span class="span2">5</span><span class="span3">80</span>
+             <div class="ulbottom">
+                <img src="./images/19.png"/>
+                <p>KE-aka</p>
+             </div>
+            </li>
+            
+           <li class="li5">
+             <img src="./images/15.png"/>
+             <h3>城</h3>
+             <p>平面-书装/画册</p>
+             <span class="span1">8837</span><span class="span2">5</span><span class="span3">80</span>
+             <div class="ulbottom">
+                <img src="./images/18.png"/>
+                <p>KE-aka</p>
+             </div>
+            </li>
+         </ul>
+       </div>
+    </div>
+    
+    <div id="main5">
+       <div class="link">
+          <ul>
+             <li><a href="#">移动版</a></li>
+             <li><a href="#">关于我们</a></li>
+             <li><a href="#">加入站酷</a></li>
+             <li><a href="#">用户协议</a></li>
+             <li><a href="#">企业服务</a></li>
+             <li><a href="#">版主中心</a></li>
+             <li><a href="#">联系我们</a></li>
+             <li><a href="#">中文</a></li>
+             <li><a href="#">English</a></li>
+          </ul>
+       </div>
+       <div class="foot">
+           <ul class="ul1">
+             <li class="li1"><a href="#">京ICP备11017842号--4</a></li>
+             <li><a href="#">京ICP备17842号--4</a></li>
+             <li><a href="#">京ICP备11017842号--4</a></li>
+             <li><a href="#">京ICP备11017842号--4</a></li>
+             <li><a href="#">京ICP备17842号--4</a></li>
+             <li style="border-right:0;padding-right:0;"><a href="#">京ICP备11017842号--4</a></li>
+             <li class="li2"><a  href="#">京ICP备110fdfdfd17842号--4</a></li>
+             <li class="li3"><a href="#">京ICP备dd7842号--4</a></li>
+             <li class="li4"><a>Copyright@3345</a></li>
+           </ul>          
+       </div>
+    </div>
+</body>
+</html>
